@@ -4,17 +4,14 @@
 
 void Metod3 (int [,] array)
 {
-    for (int m=0; m < arrey.GetLenth(0); m++)
+    for (int m=0; m < arrey.GetLength(0); m++)
     {
-        if (m%2==0)
+        
+        for (int n=0; n < array.GetLength(1); n++)
         {
-            array[m]=array[m]*array[m];
-        }
-        for (int n=0; n < arrey.GetLenth(0); n++)
-        {
-            if (n%2==0)
+            if (n%2==0 && m%2==0)
             {
-            array[n]=array[n]]*array[n];
+            array[m][n]=array[m][n]*array[m][n];
             }
         }
 
